@@ -101,7 +101,7 @@ function Sidebar() {
                         />
                         <Typography variant="h6" color={colors.grey[300]} sx={{ m: "15px 0 5px 20px "}}>Data</Typography>
                         <Item 
-                            title="Managed" 
+                            title="Manage Team" 
                             to="/team" 
                             icon={<PeopleOutlinedIcon/>} 
                             selected={selected} 
@@ -109,7 +109,7 @@ function Sidebar() {
                         />
                         <Item 
                             title="Contact Information" 
-                            to="/contact" 
+                            to="/contacts" 
                             icon={<ContactsOutlinedIcon/>} 
                             selected={selected} 
                             setSelected={setSelected} 
