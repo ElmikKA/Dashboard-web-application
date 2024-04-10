@@ -1,4 +1,4 @@
-import { useTheme, Box } from "@mui/material"
+import { useTheme, Box, Typography } from "@mui/material"
 import { tokens } from "../../theme"
 import Header from "../../components/Header"
 import { DataGrid } from "@mui/x-data-grid"
@@ -40,7 +40,11 @@ const Invoices = () => {
             headerName: "Cost",
             headerClassName: "admin-app--header",
             flex: 1,
-            cellClassName: "cost-column--cell"
+            renderCell: (params) => (
+                <Typography color={colors.greenAccent[500]} mt="13px">
+                    {params.row.cost}
+                </Typography>
+            )
         },
         {
             field: "date",
@@ -65,10 +69,6 @@ const Invoices = () => {
                     },
                     "& .admin-app--header": {
                         backgroundColor: colors.blueAccent[700],
-                        borderBottom: "10px"
-                    },
-                    "& .cost-column--cell": {
-                        color: colors.greenAccent[300]
                     },
                     "& .MuiDataGrid-virtualScroller": {
                         backgroundColor: colors.primary[400],
