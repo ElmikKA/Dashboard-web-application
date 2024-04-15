@@ -132,7 +132,7 @@ const Form = () => {
                             />
                         </Box>
                         <Box display="flex" justifyContent="end" mt="20px">
-                            <Button type="submit" color="secondary" variant="contained" onClick={handleFormSubmit}>
+                            <Button type="submit" color="secondary" variant="contained" onClick={handleFormSubmit}> 
                                 Create New User
                             </Button>
                             <Snackbar
