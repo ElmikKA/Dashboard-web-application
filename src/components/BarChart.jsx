@@ -38,6 +38,11 @@ const BarChart = ({ isDashboard = false }) => {
                     text: {
                         fill: colors.grey[100]
                     }
+                },
+                tooltip: {
+                    container: {
+                        color: colors.primary[500]
+                    }
                 }
             }}
             keys={[
@@ -153,6 +158,7 @@ const BarChart = ({ isDashboard = false }) => {
                     ]
                 }
             ]}
+            
             role="application"
             ariaLabel="Nivo bar chart demo"
             barAriaLabel={e=>e.id+": "+e.formattedValue+" in country: "+e.indexValue}
