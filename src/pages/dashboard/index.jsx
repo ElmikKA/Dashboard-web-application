@@ -48,6 +48,7 @@ function Dashboard() {
           display="flex"
           alignItems="center"
           justifyContent="center"
+          
         >
           <StatBox
             title="12,361"
